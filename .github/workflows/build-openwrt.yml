@@ -60,7 +60,6 @@ jobs:
       run: mv openwrt-sdk-ramips-mt7621_gcc-8.3.0_musl.Linux-x86_64 openwrt
       run: cd openwrt
       run: cp ../lede/package/lean/ package/ -R
-      run: cp ../lede/package/libs/librpc -R
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
